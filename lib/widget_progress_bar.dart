@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_progress_bars/bar_painter.dart';
+import 'package:flutter_progress_bars/circluar_progress_bar_painter.dart';
 
 import 'package:flutter_progress_bars/linear_bar.dart';
 

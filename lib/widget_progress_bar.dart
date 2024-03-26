@@ -47,9 +47,17 @@ class CircularProgressBar extends StatefulWidget {
 class _CircularProgreeBarState extends State<CircularProgressBar>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
+
+  //for rotaion of Circluar Progress Bar
   late Animation<double> animation;
+
+  //for color changing animation
   late Animation<Color?> colorAnimation;
+
+//for width changing animation of linear Progress bar
   late Animation<double> widthAnimation;
+
+//for text animation from 1 to Hundred
   late Animation<int> textAnimation;
 
   @override
@@ -85,6 +93,7 @@ class _CircularProgreeBarState extends State<CircularProgressBar>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          //Circluar Progress Bar
           SizedBox(
             width: 150,
             height: 150,
@@ -112,6 +121,8 @@ class _CircularProgreeBarState extends State<CircularProgressBar>
               ],
             ),
           ),
+
+          //Linear Progress Bar
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),

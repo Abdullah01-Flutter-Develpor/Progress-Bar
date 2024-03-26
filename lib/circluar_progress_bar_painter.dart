@@ -10,6 +10,7 @@ class CircluarBarPainter extends CustomPainter {
     required this.userHeight,
     required this.userWidth,
   });
+
   final double userWidth;
   final double userHeight;
   final double endAngle;
@@ -18,7 +19,6 @@ class CircluarBarPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    
     final width = size.width;
     final height = size.height;
 
